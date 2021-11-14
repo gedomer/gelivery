@@ -1,0 +1,200 @@
+[{
+    "model": "authtoken.token",
+    "pk": "0b9a7af0f7025b68736678f0fc750f784659a3c6",
+    "fields": {
+        "user": 1,
+        "created": "2021-11-14T11:17:53.817Z"
+    }
+}, {
+    "model": "authtoken.token",
+    "pk": "dca91131d24082addce5d063b66ce104a7e98202",
+    "fields": {
+        "user": 2,
+        "created": "2021-11-14T11:17:40.907Z"
+    }
+}, {
+    "model": "authtoken.token",
+    "pk": "fe68f3c38c316113ff1274dab82b8f53da89c62d",
+    "fields": {
+        "user": 3,
+        "created": "2021-11-14T11:17:44.488Z"
+    }
+}, {
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$4jt682CONoDRFWi2HGduba$keFsxlHhbnBfxxuNX8DEEU0chWGMLDjxLG46F63MQSg=",
+        "last_login": "2021-11-14T11:16:23Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Admin",
+        "last_name": "USer",
+        "email": "admin@gelivery.local",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-11-14T11:15:12Z",
+        "language": "en-us",
+        "status": "active",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "customer.user",
+        "first_name": "Customer",
+        "last_name": "User1",
+        "email": "user1@gelivery.local",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-11-14T11:16:06Z",
+        "language": "en-us",
+        "status": "active",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "customer.user.2",
+        "first_name": "Customer",
+        "last_name": "User2",
+        "email": "user2@gelivery.local",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-11-14T11:16:13Z",
+        "language": "en-us",
+        "status": "active",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "core.customer",
+    "pk": 2,
+    "fields": {
+        "address": "Müşteri 1 Adresi"
+    }
+}, {
+    "model": "core.customer",
+    "pk": 3,
+    "fields": {
+        "address": "Müşteri 2 Adresi"
+    }
+}, {
+    "model": "core.order",
+    "pk": "5e7ab735-1c04-4317-9b6c-0a06a4d716c1",
+    "fields": {
+        "customer": 3,
+        "restaurant": 1,
+        "status": "received",
+        "address": "Sipariş adresi",
+        "created_at": "2021-11-14T11:21:10.621Z",
+        "updated_at": "2021-11-14T11:21:10.621Z"
+    }
+}, {
+    "model": "core.order",
+    "pk": "cc01cb7e-78a9-4544-a0df-ba161dbdce7c",
+    "fields": {
+        "customer": 3,
+        "restaurant": 1,
+        "status": "delivered",
+        "address": "Sipariş adresi 2",
+        "created_at": "2021-11-14T11:21:53.261Z",
+        "updated_at": "2021-11-14T11:21:53.261Z"
+    }
+}, {
+    "model": "core.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": "5e7ab735-1c04-4317-9b6c-0a06a4d716c1",
+        "food": 1,
+        "quantity": 34,
+        "amount": "65.000000"
+    }
+}, {
+    "model": "core.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": "5e7ab735-1c04-4317-9b6c-0a06a4d716c1",
+        "food": 2,
+        "quantity": 15,
+        "amount": "15.000000"
+    }
+}, {
+    "model": "core.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": "cc01cb7e-78a9-4544-a0df-ba161dbdce7c",
+        "food": 2,
+        "quantity": 21,
+        "amount": "2.000000"
+    }
+}, {
+    "model": "core.foodcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Ev Yemekleri",
+        "slug": "ev-yemekleri",
+        "description": "Ev yemekleri çeşitleri"
+    }
+}, {
+    "model": "core.foodcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Fast Food",
+        "slug": "fast-food",
+        "description": "Fast Food çeşitleri"
+    }
+}, {
+    "model": "core.food",
+    "pk": 1,
+    "fields": {
+        "name": "Pilav",
+        "category": 1
+    }
+}, {
+    "model": "core.food",
+    "pk": 2,
+    "fields": {
+        "name": "Hamburger",
+        "category": 2
+    }
+}, {
+    "model": "core.food",
+    "pk": 3,
+    "fields": {
+        "name": "Vegan Pizza",
+        "category": 2
+    }
+}, {
+    "model": "core.food",
+    "pk": 4,
+    "fields": {
+        "name": "Kuru Fasulye",
+        "category": 1
+    }
+}, {
+    "model": "core.restaurant",
+    "pk": 1,
+    "fields": {
+        "name": "Kebapçı Dükkanı",
+        "address": "Kebapçı Dükkanı Adresi",
+        "city": "İzmir"
+    }
+}, {
+    "model": "core.restaurant",
+    "pk": 2,
+    "fields": {
+        "name": "Pilavcı",
+        "address": "Pilavcı Adresi",
+        "city": "Ankara"
+    }
+}]
